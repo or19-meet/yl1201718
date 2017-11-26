@@ -1,14 +1,31 @@
 from turtle import *
+import random
+colormode(255)
 
 class Square(Turtle):
 	def __init__(self, size):
 		Turtle.__init__(self)
-		self.shape("Square")
+
+		self.shape("square")
 		self.shapesize(size)
 
-	def random_colour(self):
-		r=random.randit(0,225)
-		g=random.randit(0,225)
-		b=random.randit(0,225)
-		self.colour(r,g,b)
-		
+	def random_color(self):
+		r=random.randint(0,225)
+		g=random.randint(0,225)
+		b=random.randint(0,225)
+		self.color(r,g,b)
+
+S=Square(20)
+S.random_color()
+
+# mainloop()
+
+class Rectangle(Turtle):
+	def __init__(self, width, height):
+		Turtle.__init__(self)
+
+		self.width=width
+		self.height=height
+
+		register_shape("rectangle",     
+
