@@ -13,7 +13,8 @@ class Ball(Turtle):
 ball1=Ball(3,"blue",12)
 ball2=Ball(2, "red", 8)
 
-# def check_collision(ball1, ball2):
+def check_collision(ball1, ball2):
+	
 
 
 
